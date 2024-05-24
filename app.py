@@ -5,7 +5,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, AutoModel
 from openxlab.model import download
 
 base_path = './ziyi_test'
-os.system(f'git clone https://openxlab.org.cn/models/detail/ziyi_cheng/ziyi_test {base_path}')
+os.system(f'git clone https://code.openxlab.org.cn/ziyi_cheng/ziyi_test.git {base_path}')
 os.system(f'cd {base_path} && git lfs pull')
 
 tokenizer = AutoTokenizer.from_pretrained(base_path,trust_remote_code=True)
